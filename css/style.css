@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.inner {
+    position: relative;
+    max-width: 1640px;
+    margin: auto;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+section h2 {
+    font-size: 120px;
+}
+
+section p {
+    font-size: 17px;
+    padding: 30px 0 50px;
+}
+
+a.btn {
+    background-color: #000;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 22px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .title a {
+    color: aliceblue;
+}
+
+header .inner {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 42px;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 18px;
+}
+
+#s01 {
+    height: 100vh;
+    background: url(../img/hello.png) no-repeat center/cover;
+}
+
+#s01 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#s01 .t-wrap > * {
+    color: #fff;
+}
+
+#s02 .t-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+#s02 .t-wrap h2,
+#s02 .t-wrap p{
+  position: relative;
+}
+#s02 .t-wrap::before{
+  display: block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #c9c9c9;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#s02 {
+    background: #fff;
+    padding: 0 0 60px;
+    height: auto;
+}
+
+#s02 .s02-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 60px;
+}
+
+#s02 .s02-list li {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+#s02 .s02-list h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#s02 .s02-list p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0;
+}
+#s03 {
+    background: #e8e8e8;
+}
+
+#s03 .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+
+#s03 .text {
+    text-align: center;
+    padding: 40px;
+}
+
+#s03 .text h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#s03 .text p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#s03 .img {
+    background: url(../img/school.png) no-repeat center/cover;
+    height: 100%;
+}
+
+#s04 {
+  background: #fff;
+  padding: 100px 0;
+}
+
+#s04 .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  padding: 0 60px;
+}
+
+#s04 .top-left h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#s04 .top-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+#s04 .top-right .btn {
+  font-size: 14px;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#s04 .s04-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 60px;
+}
+
+#s04 .s04-list li {
+  background: #ddd;
+  padding: 40px 20px;
+  text-align: center;
+  width: 250px;
+}
+
+#s04 .s04-list h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#s04 .s04-list p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
